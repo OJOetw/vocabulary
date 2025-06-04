@@ -14,7 +14,7 @@ while True:
 
     user_input = input("\n(翻譯)")
     if user_input.lower() == "q":
-        print("拜拜~")
+        print("bye~")
         break
 
     print(f"{meaning}")
@@ -23,7 +23,7 @@ while True:
 
     user_input = input("\n(單字)")
     if user_input.lower() == "q":
-        print("拜拜")
+        print("bey")
         break
     
     
