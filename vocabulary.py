@@ -13,6 +13,7 @@ while True:
     print(f"{word}")
 
     user_input = input("\n(翻譯)")
+    
     if user_input.lower() == "q":
         print("bye~")
         break
@@ -22,8 +23,10 @@ while True:
     print("-" * 40)
 
     user_input = input("\n(單字)")
+    
     if user_input.lower() == "q":
-        print("bey")
+        print("bye")
+        time.sleep(1)
         break
     
     
