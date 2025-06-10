@@ -5,9 +5,10 @@ while True:
 
   print("1.English vocabs")
   print("2.espanol vocabs")
+  print("3.Rest of those")
 
 
-  choice = input("enter 1 or 2: ")
+  choice = input("\nenter 1, 2 or 3: ")
 
   if choice == "1":
       vocab_list = [
@@ -105,4 +106,31 @@ while True:
                 time.sleep(1)
                 break
 
+  if choice == "2":
+    vocab_list = [("test1", "test2"), ("test3", "test4")]
 
+    while True:
+      word, meaning = random.choice(vocab_list)
+      print(f"{word}")
+
+      user_input = input("\n(翻譯)")
+
+      if user_input.lower() == "q":
+        print("bye~")
+        time.sleep(1)
+        break
+
+      print(f"{meaning}")
+
+      print("-" *40)
+
+      user_input = input("\n單字")
+
+      if user_input.lower() == "q":
+        print("bye~")
+        time.sleep(1)
+        break
+      
+
+    
+  #if choice == "3":
