@@ -86,8 +86,8 @@ while True:
 
 
       while True:
-            word, meaning = random.choice(vocab_list)
-            print(f"{word}")
+            vocab, meaning = random.choice(vocab_list)
+            print(f"{vocab}")
 
             user_input = input("\n(翻譯)")
             
@@ -110,8 +110,8 @@ while True:
     vocab_list = [("test1", "test2"), ("test3", "test4")]
 
     while True:
-      word, meaning = random.choice(vocab_list)
-      print(f"{word}")
+      vocab, meaning = random.choice(vocab_list)
+      print(f"{vocab}")
 
       user_input = input("\n(翻譯)")
 
@@ -133,4 +133,28 @@ while True:
       
 
     
-  #if choice == "3":
+  if choice == "3":
+    word_list = [("test1", "test2"), ("test3", "test4")]
+
+    while True:
+      word, meaning = random.choice(word_list)
+      print(f"{word}")
+      user_input = input("\n內容")
+
+      if user_input.lower() == "q":
+        print("bye~")
+        time.sleep(1)
+        break
+
+      print(f"{meaning}")
+
+      print("-"*40)
+
+      user_input = input("\n東東")
+      if user_input.lower() == "q":
+        print("bye~")
+        time.sleep(1)
+        break
+      
+    
+      
