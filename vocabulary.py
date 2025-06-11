@@ -3,12 +3,13 @@ import random
 
 while True:
 
-  print("1.English")
-  print("2.Espanol")
-  print("3.Rest")
+  print("1.Random English")
+  print("2.Random Espanol")
+  print("3.Random Rest")
+  print("4.Rest")
 
 
-  choice = input("\nenter 1, 2 or 3: ")
+  choice = input("\nenter 1, 2, 3, 4: ")
 
   if choice == "1":
       vocab_list = [
@@ -144,6 +145,7 @@ while True:
                  ("地震", "earthquake"),
                  ("CO2", "carbon dioxide"),
                  ("地球温暖化", "global warming"),
+                 ("熔岩", "lava")
                  ]
     
     while True:
@@ -165,6 +167,31 @@ while True:
         print("bye~")
         time.sleep(1)
         break
-      
+
+  if choice == "4":
+    word_list = [("太陽", "Sun"),
+                 ("惑星", "planet"),
+                 ("津波", "tsunami"),
+                 ("火山", "volcano"),
+                 ("石油", "oil"),
+                 ("岩石", "rock"),
+                 ("地球", "Earth"),
+                 ("地震", "earthquake"),
+                 ("CO2", "carbon dioxide"),
+                 ("地球温暖化", "global warming"),
+                 ("熔岩", "lava")
+                 ]
+    while True:
+      for word, meaning in word_list:
+        print(f"{word}")
+        user_input = input("\n(↓)")
+        if user_input.lower() == "q":
+          print("bye~")
+          time.sleep(1)
+          break
+        print(f"{meaning}")
+        print("-"*40)
+        user_input = input("")
+
     
       
