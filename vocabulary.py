@@ -7,9 +7,15 @@ while True:
   print("2.Random Espanol")
   print("3.Random Rest")
   print("4.Rest")
+  print("5.Rest temporily")
+  print("6.Rest temporily")
+  print("7.Rest temporily")
+  print("8.Rest temporily")
+  print("9.Rest temporily")
+  print("10.Rest temporily")
 
 
-  choice = input("\nenter 1, 2, 3, 4: ")
+  choice = input("\nenter 1, 2, 3, 4, 5: ")
 
   if choice == "1":
       vocab_list = [
@@ -192,6 +198,34 @@ while True:
         print(f"{meaning}")
         print("-"*40)
         user_input = input("")
+
+  if choice == "5":
+    word_list =[
+    ("AU（天文単位）とは", ""),
+    ("彗星の源はどこか", ""),
+    ("地球型惑星とは何か", ""),
+    ("木星型惑星とは何か", ""),
+    ("木星の大赤斑, 組成、木星の衛星数", ""),
+    ("エウロパとは何か", ""),
+    ("EKBO天体とは何か", ""),
+    ("冥王星とカロンの関係", ""),
+    ("惑星の定義とは何か", ""),
+    ("準惑星とは何か", ""),
+    ("球形ではない天体とは何か", ""),
+    ("EKBとは何か", "12"),
+    ("課題：なぜ冥王星は準惑星になったか？事情と原因を説明して", "s")]
+
+    while True:
+      for word, meaning in word_list:
+        print(f"{word}")
+        user_input = input("\n(↓)")
+        if user_input.lower() == "q":
+          print("bye~")
+          time.sleep(1)
+          break
+        print(f"{meaning}")
+        print("-"*40)
+        user_input = input("")        
 
     
       
