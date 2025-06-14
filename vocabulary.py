@@ -9,7 +9,7 @@ while True:
   print("4.Rest")
   print("5.Rest temporily")
   print("6.Rest temporily")
-  print("7.Rest temporily")
+  print("7.第四回")
   print("8.Rest temporily")
   print("9.Rest temporily")
   print("10.Rest temporily")
@@ -225,7 +225,166 @@ while True:
           break
         print(f"{meaning}")
         print("-"*40)
-        user_input = input("")        
+        user_input = input("")
+        
+  if choice == "6":
+    word_list =[
+    ("地球の形は", ""),
+    ("平均半径は", ""),
+    ("赤道半径→極半径よりも？", ""),
+    ("遠心力が最大のところは", ""),
+    ("扁平率とは", ""),
+    ("大きく三区分は（英語）（比率）", ""),
+    ("内部構造を知る方法", ""),
+    ("P波は", ""),
+    ("S波は", ""),
+    ("外核は？波", ""),
+    ("シャドーゾーンとは", ""),
+    ("リンスフェアーと？", ""),
+    ("大陸地殻は海洋地殻より", ""),
+    ("マントルの上に、何が漂っている？", ""),
+    ("マントル→（？）岩", ""),
+    ("上部マントル", ""),
+    ("下部マントル", ""),
+    ("地核は", ""),
+    ("課題：地球とゆで卵（殻付き、黄身は一個とする）の内部構造、外形を比較し、共通点と相違点を述べてください。略図も書きましょう。", "")
+]
 
-    
-      
+    while True:
+      for word, meaning in word_list:
+        print(f"{word}")
+        user_input = input("\n(↓)")
+        if user_input.lower() == "q":
+          print("bye~")
+          time.sleep(1)
+          break
+        print(f"{meaning}")
+        print("-"*40)
+        user_input = input("") 
+
+  if choice == "7":
+    word_list =[
+    ("鉱物の英語", ""),
+    ("鉱物の定義", ""),
+    ("結晶の英語", ""),
+    ("結晶の定義", ""),
+    ("鉱物とは", ""),
+    ("ガラスとは", ""),
+    ("硬度とは、順番", ""),
+    ("造岩鉱物とは", ""),
+    ("造岩鉱物の多くは？", ""),
+    ("宝石は？", ""),
+    ("固溶体からできる", ""),
+    ("カンラン石の構造とイオン半径は入れ替わりやすい？", ""),
+    ("マグマの溶けた部分の温度は", ""),
+    ("溶岩とは？", ""),
+    ("火山岩とは", ""),
+    ("深成岩とは、地下何km？", ""),
+    ("宝石と鉱石は", ""),
+    ("キンバライト噴火", ""),
+    ("課題：「結晶」と「ガラス」の違いは？マグマから形成される場合、その違いが生じる要因は？具体的な例を", ""),
+    ("鉱物と鉱石の違い", "")
+]
+
+    while True:
+      for word, meaning in word_list:
+        print(f"{word}")
+        user_input = input("\n(↓)")
+        if user_input.lower() == "q":
+          print("bye~")
+          time.sleep(1)
+          break
+        print(f"{meaning}")
+        print("-"*40)
+        user_input = input("") 
+
+
+  if choice == "8":
+    word_list =[
+    ("火山とは", ""),
+    ("火山フロントより、海溝側に？", ""),
+    ("世界の火山の分布", ""),
+    ("海嶺とは", ""),
+    ("火山の種類と分布", ""),
+    ("島弧", ""),
+    ("マグマとは、温度は", ""),
+    ("複成火山とは", ""),
+    ("単成火山とは", ""),
+    ("火山灰　火山弾　火砕流", ""),
+    ("マグマと変成岩とは", ""),
+    ("日本の主な変成岩は", ""),
+    ("課題：プリント", "")
+]
+
+    while True:
+      for word, meaning in word_list:
+        print(f"{word}")
+        user_input = input("\n(↓)")
+        if user_input.lower() == "q":
+          print("bye~")
+          time.sleep(1)
+          break
+        print(f"{meaning}")
+        print("-"*40)
+        user_input = input("")     
+
+  if choice == "9":
+    word_list =[
+    ("地震とは", ""),
+    ("マグニチュードとは", ""),
+    ("マグニチュード１の違いはエネルギー？倍", ""),
+    ("震度とは", ""),
+    ("地震の原因とは、種類？", ""),
+    ("活断層とは", ""),
+    ("正断層、逆断層とは", ""),
+    ("三つのタイプは？", ""),
+    ("地震予測は？", ""),
+    ("空白域とは", ""),
+    ("トレンチ調査とは", ""),
+    ("数字は？年代測定", ""),
+    ("津波とは", ""),
+    ("地震の連動の例", ""),
+    ("津波の痕跡とは英語とは", ""),
+    ("液状化とは？間隙水？", ""),
+    ("課題：プリント", "")
+]
+
+    while True:
+      for word, meaning in word_list:
+        print(f"{word}")
+        user_input = input("\n(↓)")
+        if user_input.lower() == "q":
+          print("bye~")
+          time.sleep(1)
+          break
+        print(f"{meaning}")
+        print("-"*40)
+        user_input = input("")          
+
+  if choice == "10":
+    word_list =[
+    ("プレートテクトニクス理論とは", ""),
+    ("大陸移動説の根拠とは", ""),
+    ("大陸移動説の復活の原因は", ""),
+    ("海洋底拡大説", ""),
+    ("海洋底の年代を調べる方法？", ""),
+    ("海嶺軸から左右対称の？を示す", ""),
+    ("どんな境界は海嶺？衝突境界は？すれ違う境界とは", ""),
+    ("海嶺の特徴　三つ", ""),
+    ("沈み込み帯の特徴　五つ", ""),
+    ("火山フロントとは", ""),
+    ("日本の活火山の数は", ""),
+    ("課題：プリント", "")
+]
+
+    while True:
+      for word, meaning in word_list:
+        print(f"{word}")
+        user_input = input("\n(↓)")
+        if user_input.lower() == "q":
+          print("bye~")
+          time.sleep(1)
+          break
+        print(f"{meaning}")
+        print("-"*40)
+        user_input = input("")
