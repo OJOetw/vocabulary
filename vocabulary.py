@@ -115,30 +115,70 @@ while True:
                 break
 
   if choice == "2":
-    vocab_list = [("test1", "test2"), ("test3", "test4")]
+      vocab_list = [
+    ("Exude", "滲出／散發出 - v."),
+    ("Ensnare", "誘捕／使落入陷阱 - v."),
+    ("Entrap", "設陷阱／困住 - v."),
+    ("Hoax", "惡作劇／騙局 - n./v."),
+    ("Nourishment", "營養／養分 - n."),
+    ("Arthropods", "節肢動物 - n."),
+    ("Carnivorous", "食肉的 - adj."),
+    ("Photosynthesis", "光合作用 - n."),
+    ("Reliance", "依賴／信賴 - n."),
+    ("Sundew", "毛氈苔（食蟲植物） - n."),
+    ("Passively", "被動地 - adv."),
+    ("Lure", "引誘／誘惑 - v./n."),
+    ("Insectivorous", "食蟲的 - adj."),
+    ("Slippery", "滑的／難以捉摸的 - adj."),
+    ("Cupped", "杯狀的 - adj."),
+    ("Piercing", "刺穿的／尖銳的 - adj."),
+    ("Throne", "王座／寶座 - n."),
+    ("Enzymatic", "酵素的／酶的 - adj."),
+    ("Seduce", "誘惑／引誘 - v."),
+    ("Slick", "滑的／聰明的 - adj."),
+    ("Decomposed", "分解的／腐爛的 - adj./v."),
+    ("Decay", "腐爛／衰退 - n./v."),
+    ("Feces", "糞便／排泄物 - n."),
+    ("Carcass", "動物屍體 - n."),
+    ("Ardent", "熱情的／熱心的 - adj."),
+    ("Botany", "植物學 - n."),
+    ("Inclusive", "包容的／包含一切的 - adj."),
+    ("Seeming", "表面上的 - adj."),
+    ("Unsuspecting", "毫無戒心的 - adj."),
+    ("Intruder", "入侵者／闖入者 - n."),
+    ("Twig", "小樹枝 - n."),
+    ("Bogs", "沼澤 - n."),
+    ("Subsist", "勉強生存／維持生活 - v."),
+    ("Drawn", "被吸引的／拉出的 - adj./v."),
+    ("Entice", "引誘／誘惑 - v."),
+    ("Imprison", "監禁／困住 - v."),
+    ("Interlock", "互相扣住／連接 - v.")
+]
 
-    while True:
-      vocab, meaning = random.choice(vocab_list)
-      print(f"{vocab}")
+     
+      while True:
+          for vocab, meaning in vocab_list:
+            #vocab, meaning = random.choice(vocab_list)
+            print(f"{vocab}")
 
-      user_input = input("\n(翻譯)")
+            user_input = input("\n(翻譯)")
+            
+            if user_input.lower() == "q":
+                print("bye~")
+                break
 
-      if user_input.lower() == "q":
-        print("bye~")
-        time.sleep(1)
-        break
+            print(f"{meaning}")
 
-      print(f"{meaning}")
+            print("-" * 40)
 
-      print("-" *40)
+            user_input = input("\n(單字)")
+            
+            if user_input.lower() == "q":
+                print("bye")
+                time.sleep(1)
+                break
 
-      user_input = input("\n(單字)")
-
-      if user_input.lower() == "q":
-        print("bye~")
-        time.sleep(1)
-        break
-      
+        
 
     
   if choice == "3":
