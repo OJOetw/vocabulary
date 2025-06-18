@@ -7,12 +7,12 @@ while True:
   print("2.Random Espanol")
   print("3.Random Rest")
   print("4.Rest")
-  print("5.太陽系の構造と天体")
-  print("6.地球の形と内部構造")
-  print("7.鉱石と岩石")
-  print("8.火山と変成岩")
-  print("9.地震と断層")
-  print("10.プレートテクトニクス")
+  print("5.Rest")
+  print("6.Rest")
+  print("7.Rest")
+  print("8.Rest")
+  print("9.Rest")
+  print("10.Rest")
 
 
   choice = input("\nenter 1, 2, 3, 4, 5: ")
@@ -126,13 +126,13 @@ while True:
     ("Photosynthesis", "光合作用 - n."),
     ("Reliance", "依賴／信賴 - n."),
     ("Sundew", "毛氈苔（食蟲植物） - n."),
-    ("Passively", "被動地 - adv."),
+    
     ("Lure", "引誘／誘惑 - v./n."),
     ("Insectivorous", "食蟲的 - adj."),
     ("Slippery", "滑的／難以捉摸的 - adj."),
     ("Cupped", "杯狀的 - adj."),
     ("Piercing", "刺穿的／尖銳的 - adj."),
-    ("Throne", "王座／寶座 - n."),
+    
     ("Enzymatic", "酵素的／酶的 - adj."),
     ("Seduce", "誘惑／引誘 - v."),
     ("Slick", "滑的／聰明的 - adj."),
@@ -182,38 +182,47 @@ while True:
 
     
   if choice == "3":
-    word_list = [("太陽", "Sun"),
-                 ("惑星", "planet"),
-                 ("津波", "tsunami"),
-                 ("火山", "volcano"),
-                 ("石油", "oil"),
-                 ("岩石", "rock"),
-                 ("地球", "Earth"),
-                 ("地震", "earthquake"),
-                 ("CO2", "carbon dioxide"),
-                 ("地球温暖化", "global warming"),
-                 ("熔岩", "lava")
-                 ]
+      word_list = [
+    ("passive", "被動地 - adv."),
+    ("intermingle", "混合、交融 - v."),
+    ("delve", "深入探索 - v."),
+    ("cooperate", "合作 - v."),
+    ("encroach", "侵入、侵犯 - v."),
     
-    while True:
-      word, meaning = random.choice(word_list)
-      print(f"{word}")
-      user_input = input("\n(↓)")
+    ("eradicate", "根除 - v."),
+    ("deplete", "耗盡 - v."),
+    
+    ("span", "持續；範圍 - n./v."),
+    ("ritual", "儀式 - n."),
+    ("dialect", "方言 - n."),
+    ("aboriginal", "原住民的；原始的 - adj."),
+    ("indigenous", "本地的、土著的 - adj."),
+    ("semi-nomadic", "半游牧的 - adj."),
+    ("gradual", "逐漸的 - adj."),
+    ("cooperative", "合作的；合作社 - adj./n.")]
+                 
+    
+      while True:
+          for vocab, meaning in word_list:
+            #vocab, meaning = random.choice(vocab_list)
+            print(f"{vocab}")
 
-      if user_input.lower() == "q":
-        print("bye~")
-        time.sleep(1)
-        break
+            user_input = input("\n(翻譯)")
+            
+            if user_input.lower() == "q":
+                print("bye~")
+                break
 
-      print(f"{meaning}")
+            print(f"{meaning}")
 
-      print("-"*40)
+            print("-" * 40)
 
-      user_input = input("")
-      if user_input.lower() == "q":
-        print("bye~")
-        time.sleep(1)
-        break
+            user_input = input("\n(單字)")
+            
+            if user_input.lower() == "q":
+                print("bye")
+                time.sleep(1)
+                break
 
   if choice == "4":
     word_list = [("太陽", "Sun"),
